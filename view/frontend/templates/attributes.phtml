@@ -1,0 +1,12 @@
+<?php
+
+/** @var Template $block */
+
+use Magento\Framework\View\Element\Template;
+?>
+
+<?php foreach ($block->getViewModel()->getAttributes() as $attribute): ?>
+Disallow: /*?<?= $attribute ?>=*
+Disallow: /*&<?= $attribute ?>=*
+<?php endforeach; ?>
+
